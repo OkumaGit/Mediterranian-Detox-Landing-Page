@@ -108,10 +108,7 @@ p{margin: 0 0 56px;}
 	bottom: 0;
 	background: url(images/img-woman.png) 0 0 no-repeat;
 }
-.content{
-	padding:200px 205px 190px 160px;
-	position: relative;
-}
+.content{padding:200px 205px 190px 160px;}
 .content .image{margin:0 0 40px;}
 .subscribe > div{position: relative;}
 form input[type="text"]{
@@ -177,72 +174,74 @@ form input.placeholder{color: #ddd;}
 		height: 620px;
 		background-size: 300px 620px;
 	}
+	.content{padding:80px 205px 190px 160px;}
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
+	h1{margin:0 0 10px;}
+	h2{margin: 0 0 18px;}
+	p{margin:0 0 15px;}
 	#wrapper:after{width: 12%;}
 	.w1:after{
 		width: 200px;
 		height: 413px;
 		background-size: 200px 413px;
 	}
-	.content{padding: 80px 205px 50px 160px}
+	.content{padding: 40px 205px 50px 160px}
+	.content .image{margin:0 0 20px;}
 }
 @media only screen and (max-width: 870px) {
+	body{font:300 14px/24px 'Roboto', Arial ,sans-serif;}
+	h1{font:21px/25px "Pacifico", cursive;}
+	h2{font:42px/46px 'Arvo', Times, serif;}
 	#wrapper:after,
 	#wrapper:before,
 	.w1:after{content: none}
 	.content{
-		padding: 80px 245px 0 75px;
+		padding: 40px 200px 171px 75px;
 		margin:0 -10px;
-		min-height: 730px;
-	}
-	.content:after{
-		position: absolute;
-		content: "";
-		right: 0;
-		bottom: 241px;
-		width: 229px;
-		height: 727px;
-		background: url(images/img-woman-xs.png) 0 0 no-repeat;
 	}
 	.subscribe{
-		margin:0 -245px 0 -75px;
-		padding:80px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding:50px 80px;
 		background: #fae0c5 url(images/bg-subscribe-box.png) 50% 0 no-repeat;
 		background-size:cover; 
 	}
+	.subscribe:after{
+		position: absolute;
+		content: "";
+		right: 0;
+		top: -470px;
+		width: 150px;
+		height: 470px;
+		background: url(images/img-woman-xs.png) 0 0 no-repeat;
+		background-size: 150px 470px;
+	}
 	form input[type="text"]{
-		height: 81px;
+		height: 71px;
 		font:300 21px/29px 'Roboto', sans-serif;
 		border:0;
 		border-radius: 3px;
-		padding: 26px 175px 26px 25px;
+		padding: 21px 175px 21px 25px;
 	}
 	form input[type="submit"]{
-		top: 12px;
-		right: 12px;
+		top: 7px;
+		right: 7px;
 		font:700 14px/17px 'Roboto', sans-serif;
 		padding:20px 5px;
 	}
 }
 @media only screen and (max-width: 767px){
-	body{font:300 14px/24px 'Roboto', Arial ,sans-serif;}
-	h1{font:21px/25px "Pacifico", cursive;}
-	h2{font:42px/46px 'Arvo', Times, serif;}
-	.content{
-		padding: 40px 120px 0 36px;
-		min-height: 1px;
-	}
-	.content:after{
-		bottom: 121px;
+	.content{padding: 40px 120px 121px 36px;}
+	.content .image img{max-width: 70px;}
+	.subscribe{padding:40px;}
+	.subscribe:after{
+		top: -365px;
 		width: 115px;
 		height: 365px;
 		background-size: 115px 365px;
-	}
-	.content .image img{max-width: 70px;}
-	.subscribe{
-		margin:0 -120px 0 -36px;
-		padding:40px;
 	}
 	form input[type="text"]{
 		height: 41px;
@@ -260,19 +259,8 @@ form input.placeholder{color: #ddd;}
 	}
 }
 @media only screen and (max-width: 479px){
-	h1{margin:0 0 10px;}
-	h2{
-		font:25px/29px 'Arvo', Times, serif;
-		margin: 0 0 18px;
-	}
-	p{margin:0 0 28px;}
-	.content:after{
-		bottom: 81px;
-		width: 115px;
-		height: 365px;
-		background-size: 115px 365px;
-	}
-	.content .image{margin:0 0 20px;}
+	h2{font:25px/29px 'Arvo', Times, serif;}
+	.content{padding: 40px 120px 81px 36px;}
 	.subscribe{padding: 20px;}
 	form input[type="text"]{padding: 10px 105px 10px 15px;}
 }
