@@ -1,1 +1,1 @@
-# website_test
+# Mediterranian Detox Landing Page
